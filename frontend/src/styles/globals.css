@@ -1,0 +1,22 @@
+@import "tailwindcss";
+/* global CSS or component styles */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap');
+
+.cesium-viewer, .cesium-viewer canvas {
+    font-family: 'Noto Sans Arabic', 'Segoe UI', 'Tahoma', sans-serif !important;
+    direction: rtl;
+}
+
+[dir="rtl"] {
+    font-family: 'Noto Sans Arabic', 'Segoe UI', 'Tahoma', sans-serif;
+}
+html, body, #__next {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
