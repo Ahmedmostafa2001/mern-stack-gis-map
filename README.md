@@ -1,123 +1,96 @@
-# GIS Application
+# MERN Stack GIS Map
 
-This repository contains the GIS application, which is divided into two main parts:
+## Overview
 
-1. **Backend**: Built with Node.js, TypeScript, and Prisma ORM.
-2. **Frontend**: Built with Next.js and TypeScript.
+This project is a Geographic Information System (GIS) application built using the MERN stack (MongoDB, Express.js, React, Node.js). It provides an interactive map interface with features for managing and visualizing geospatial data. The application is designed to be scalable, modular, and user-friendly.
+
+## Features
+
+- **Frontend**: Built with Next.js for server-side rendering and optimized performance.
+  - Interactive map visualization using Cesium.js.
+  - Multi-language support with `next-i18next`.
+  - Modular components for authentication, dashboard, and layouts.
+  - Responsive design with reusable styles.
+
+- **Backend**: Powered by Node.js and Express.js.
+  - Prisma ORM for database management.
+  - RESTful API endpoints for authentication, user management, and dashboard data.
+  - Middleware for authentication and request validation.
+
+- **Database**: 
+  - Prisma schema for defining and managing database models.
+  - Migration scripts for database versioning.
+
+- **GIS Integration**:
+  - Cesium.js for 3D map rendering.
+  - Utilities for geospatial calculations.
+
+## Folder Structure
+
+### Backend
+- `src/`: Contains the main application logic, including controllers, routes, middleware, and utilities.
+- `prisma/`: Database schema and migration files.
+- `config/`: Configuration files for database and other services.
+
+### Frontend
+- `src/`: Contains React components, pages, services, and utilities.
+- `public/`: Static assets, including Cesium.js resources and images.
+- `styles/`: Global CSS styles.
 
 ## Prerequisites
 
-Ensure you have the following installed on your system:
+- Node.js (v16+)
+- MongoDB
+- Prisma CLI
+- Yarn or npm
 
-- Node.js (v16 or higher)
-- npm or yarn
-- PostgreSQL (or any other database supported by Prisma)
+## Installation
 
-## Backend
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/mern-stack-gis-map.git
+   cd mern-stack-gis-map
+   ```
 
-### Getting Started
+2. Install dependencies:
+   ```bash
+   # Backend
+   cd backend
+   npm install
 
-1. **Navigate to the Backend Directory**:
+   # Frontend
+   cd ../frontend
+   npm install
+   ```
 
+3. Configure environment variables:
+   - Backend: Create a `.env` file in the `backend` directory and add your database connection string and other secrets.
+   - Frontend: Create a `.env.local` file in the `frontend` directory for frontend-specific configurations.
+
+4. Run database migrations:
    ```bash
    cd backend
-   ```
-
-2. **Install Dependencies**:
-
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-
-3. **Configure Environment Variables**:
-
-   Create a `.env` file in the `backend` directory and add the required environment variables. Refer to the `prisma.config.ts` file for database configuration details.
-
-4. **Run Database Migrations**:
-
-   ```bash
    npx prisma migrate dev
    ```
 
-5. **Start the Development Server**:
-
+5. Start the development servers:
    ```bash
+   # Backend
+   cd backend
    npm run dev
-   # or
-   yarn dev
-   ```
 
-   The server will start on [http://localhost:3000](http://localhost:3000).
-
-### Project Structure
-
-- **src/**: Contains the source code for the backend service.
-  - **controller/**: Handles the business logic for various routes.
-  - **middleware/**: Contains middleware functions for request handling.
-  - **routes/**: Defines the API routes.
-  - **utils/**: Utility functions used across the application.
-  - **config/**: Configuration files, including database setup.
-- **prisma/**: Contains the Prisma schema and migration files.
-
-### Scripts
-
-- `npm run dev`: Start the development server.
-- `npm run build`: Build the project for production.
-- `npm run start`: Start the production server.
-- `npx prisma studio`: Open Prisma Studio to manage the database.
-
-## Frontend
-
-### Getting Started
-
-1. **Navigate to the Frontend Directory**:
-
-   ```bash
-   cd frontend
-   ```
-
-2. **Install Dependencies**:
-
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-
-3. **Start the Development Server**:
-
-   ```bash
+   # Frontend
+   cd ../frontend
    npm run dev
-   # or
-   yarn dev
    ```
 
-   The application will be available at [http://localhost:3000](http://localhost:3000).
+6. Open the application in your browser:
+   - Frontend: `http://localhost:3000`
+   - Backend API: `http://localhost:5000`
 
-### Project Structure
+## Contributing
 
-- **src/**: Contains the source code for the frontend application.
-  - **components/**: Reusable UI components.
-  - **context/**: Context providers for state management.
-  - **layouts/**: Layout components for different pages.
-  - **pages/**: Next.js pages, including API routes.
-  - **services/**: Handles API calls and business logic.
-  - **styles/**: Global and component-specific styles.
-  - **utils/**: Utility functions used across the application.
-
-### Scripts
-
-- `npm run dev`: Start the development server.
-- `npm run build`: Build the project for production.
-- `npm run start`: Start the production server.
-
-## Learn More
-
-- [Prisma Documentation](https://www.prisma.io/docs) - Learn about Prisma ORM.
-- [Node.js Documentation](https://nodejs.org/en/docs/) - Learn about Node.js features and API.
-- [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API.
+Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.
 
 ## License
 
