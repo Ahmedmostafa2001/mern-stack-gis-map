@@ -1,0 +1,7 @@
+node_modules
+node_modules/cesium
+# Keep environment variables out of version control
+.env
+public
+
+/generated/prisma
