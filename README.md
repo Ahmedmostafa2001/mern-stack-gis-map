@@ -86,7 +86,7 @@ This project is a Geographic Information System (GIS) application built using th
 
 6. Open the application in your browser:
    - Frontend: `http://localhost:3000`
-   - Backend API: `http://localhost:5000`
+   - Backend API: `http://localhost:5501`
 
 ## Contributing
 
