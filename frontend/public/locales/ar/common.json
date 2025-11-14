@@ -1,0 +1,23 @@
+{
+  "title": "التنقل في الحرم الجامعي",
+  "buildings": "المباني",
+  "noBuildings": "لا توجد مباني متاحة",
+  "calculate": "احسب المسار",
+  "clickMap": "انقر على الخريطة لتحديد نقطتي البداية والنهاية",
+  "startPoint": "نقطة البداية",
+  "endPoint": "نقطة النهاية",
+  "distance": "المسافة",
+  "time": "الوقت المقدر",
+  "km": "كم",
+  "minutes": "دقيقة",
+  "clear": "مسح",
+  "buildingType": {
+    "academic": "مبنى أكاديمي",
+    "administrative": "إداري",
+    "library": "مكتبة",
+    "dormitory": "سكن",
+    "cafeteria": "كافتيريا",
+    "sports": "منشأة رياضية",
+    "other": "أخرى"
+  }
+}

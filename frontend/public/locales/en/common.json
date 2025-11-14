@@ -1,0 +1,24 @@
+// locales/en.json
+{
+  "title": "Campus Navigation",
+  "buildings": "Buildings",
+  "noBuildings": "No buildings available",
+  "calculate": "Calculate Route",
+  "clickMap": "Click on the map to select start and end points",
+  "startPoint": "Start Point",
+  "endPoint": "End Point",
+  "distance": "Distance",
+  "time": "Estimated Time",
+  "km": "km",
+  "minutes": "min",
+  "clear": "Clear",
+  "buildingType": {
+    "academic": "Academic Building",
+    "administrative": "Administrative",
+    "library": "Library",
+    "dormitory": "Dormitory",
+    "cafeteria": "Cafeteria",
+    "sports": "Sports Facility",
+    "other": "Other"
+  }
+}

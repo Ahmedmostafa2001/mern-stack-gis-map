@@ -1,0 +1,23 @@
+{
+  "title": "Navigation du Campus",
+  "buildings": "Bâtiments",
+  "noBuildings": "Aucun bâtiment disponible",
+  "calculate": "Calculer l'itinéraire",
+  "clickMap": "Cliquez sur la carte pour sélectionner les points de départ et d'arrivée",
+  "startPoint": "Point de départ",
+  "endPoint": "Point d'arrivée",
+  "distance": "Distance",
+  "time": "Temps estimé",
+  "km": "km",
+  "minutes": "min",
+  "clear": "Effacer",
+  "buildingType": {
+    "academic": "Bâtiment académique",
+    "administrative": "Administratif",
+    "library": "Bibliothèque",
+    "dormitory": "Dortoir",
+    "cafeteria": "Cafétéria",
+    "sports": "Installation sportive",
+    "other": "Autre"
+  }
+}
